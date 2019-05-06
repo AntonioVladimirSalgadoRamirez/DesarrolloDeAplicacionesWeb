@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="agenda.css">
+    <title>AGENDA</title>
+</head>
+
+<body>
+ <form name="frm" method="POST" action="recibe.php">
+         <tr>
+                <td>INGRESA TU TAREA:</td>
+                <td> <input type="text" name="txtEtiqueta" ></td>
+                <td>&nbsp</td>
+         </tr>
+         <tr>
+           <td id="agenda"><input type="button" onclick="agregar();" value="AGREGAR"/></td>
+           <td id="agenda"><input type="button" onclick="eliminar();" value="ELIMINAR"/></td>
+           <td id="agenda"><input type="button" onclick="modificar();"value="EDITAR"/></td>  
+         </tr>
+    <table>     
+     <tr>
+            <td>TAREAS</td>
+            <td colspan="2">
+                <select name="cmbColor" id="selColores">
+                    <option>DESAYUNAR</option>
+                    <option>ALMORZAR</option>
+                    <option>COMER</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+ </form> 
+ <script src="agenda.js"></script>  
+</body>
+</html>
